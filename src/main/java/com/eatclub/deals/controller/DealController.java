@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.eatclub.deals.dto.DealResponseDto;
 import com.eatclub.deals.entity.Deal;
 import com.eatclub.deals.exception.InvalidInputException;
+import com.eatclub.deals.model.PeakTimeResponse;
 import com.eatclub.deals.repository.DealRepository;
+import com.eatclub.deals.service.PeakTimeCalculatorService;
 import com.eatclub.deals.util.DateTimeParser;
 
 import java.time.LocalTime;
@@ -22,6 +24,9 @@ import java.util.stream.Collectors;
 public class DealController {
 
     private final DealRepository dealRepository;
+
+    @Autowired
+    private PeakTimeCalculatorService peakTimeCalculatorService;
 
     @Autowired
     private DateTimeParser dateTimeParser;
@@ -55,5 +60,19 @@ public class DealController {
                                                             .collect(Collectors.toList());
 
         return ResponseEntity.ok(dealResponseDtos);
+    }
+
+    @GetMapping("/peak-time")
+    public ResponseEntity<PeakTimeResponse> getPeakDealTime() {
+        PeakTimeCalculatorService.PeakTimeWindow peakWindow = peakTimeCalculatorService.calculatePeakTimeWindow();
+        if (peakWindow.getPeakTimeStart() == null) {
+            return ResponseEntity.noContent().build();
+        }
+        
+        PeakTimeResponse response = new PeakTimeResponse(
+            peakWindow.getPeakTimeStart(),
+            peakWindow.getPeakTimeEnd()
+        );
+        return ResponseEntity.ok(response);
     }
 }

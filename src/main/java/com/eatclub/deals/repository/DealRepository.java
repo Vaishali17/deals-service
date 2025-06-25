@@ -32,5 +32,14 @@ public interface DealRepository extends JpaRepository<Deal, Long> {
            "AND (:queryTime >= d.startTime AND :queryTime <= d.endTime)")
     List<Deal> findActiveDealsAtTime(LocalTime queryTime);
 
+    /**
+     * This method fetches all deals that are not soft-deleted, regardless of their current quantity or specific time.
+     *
+     * @return A list of all valid (not deleted) deals
+     */
+    @Query("SELECT d FROM Deal d JOIN FETCH d.restaurant " +
+           "WHERE d.isDeleted = FALSE")
+    List<Deal> findAllValidDeals();
+
 }
 

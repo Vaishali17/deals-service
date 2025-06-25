@@ -4,6 +4,7 @@ import com.eatclub.deals.entity.Deal;
 import com.eatclub.deals.entity.Restaurant;
 import com.eatclub.deals.exception.GlobalExceptionHandler;
 import com.eatclub.deals.repository.DealRepository;
+import com.eatclub.deals.service.PeakTimeCalculatorService;
 import com.eatclub.deals.util.DateTimeParser;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -29,13 +31,18 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class DealControllerTest {
 
     @Autowired
-    private MockMvc mockMvc; // Used to perform HTTP requests
+    private MockMvc mockMvc;
 
     @MockBean
-    private DealRepository dealRepository; // Mock the repository dependency
+    private DealRepository dealRepository;
 
     @MockBean
-    private DateTimeParser dateTimeParser; // Mock the date/time parser dependency
+    private PeakTimeCalculatorService peakTimeCalculatorService;
+
+    @MockBean
+    private DateTimeParser dateTimeParser;
+
+    private static final DateTimeFormatter PEAK_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm");
 
     private Restaurant createSampleRestaurant(Long id, String restaurantObjectId, String name,
                                               String address1, String suburb, LocalTime openTime, LocalTime closeTime) {
@@ -279,5 +286,66 @@ public class DealControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray())
                 .andExpect(jsonPath("$.length()").value(0)); // Expect an empty array
+    }
+
+    /**
+     * Test case for the /peak-time endpoint when a peak time window is successfully calculated.
+     * Expected: HTTP 200 OK and a PeakTimeResponse with start and end times.
+     *
+     * @throws Exception If an error occurs during the mock MVC request.
+     */
+    @Test
+    void getPeakDealTime_Success() throws Exception {
+        LocalTime peakStart = LocalTime.of(12, 0);
+        LocalTime peakEnd = LocalTime.of(13, 0);
+        PeakTimeCalculatorService.PeakTimeWindow peakWindow =
+                new PeakTimeCalculatorService.PeakTimeWindow(peakStart, peakEnd);
+
+        when(peakTimeCalculatorService.calculatePeakTimeWindow()).thenReturn(peakWindow);
+
+        mockMvc.perform(get("/v1/peak-time")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.peakTimeStart").value(PEAK_TIME_FORMATTER.format(peakStart)))
+                .andExpect(jsonPath("$.peakTimeEnd").value(PEAK_TIME_FORMATTER.format(peakEnd)));
+    }
+
+    /**
+     * Test case for the /peak-time endpoint when no peak time window can be determined.
+     * This occurs if the service returns a PeakTimeWindow with null start time.
+     * Expected: HTTP 204 No Content.
+     *
+     * @throws Exception If an error occurs during the mock MVC request.
+     */
+    @Test
+    void getPeakDealTime_NoContent() throws Exception {
+        PeakTimeCalculatorService.PeakTimeWindow peakWindow =
+                new PeakTimeCalculatorService.PeakTimeWindow(null, null);
+
+        when(peakTimeCalculatorService.calculatePeakTimeWindow()).thenReturn(peakWindow);
+
+        mockMvc.perform(get("/v1/peak-time")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNoContent())
+                .andExpect(jsonPath("$").doesNotExist());
+    }
+
+     /**
+     * Test case for the /peak-time endpoint when an internal server error occurs in the service.
+     * This simulates an unexpected RuntimeException from PeakTimeCalculatorService.
+     * Expected: HTTP 500 Internal Server Error with a generic error message.
+     *
+     * @throws Exception If an error occurs during the mock MVC request.
+     */
+    @Test
+    void getPeakDealTime_InternalServerError() throws Exception {
+        when(peakTimeCalculatorService.calculatePeakTimeWindow())
+                .thenThrow(new RuntimeException("Simulated internal error during peak time calculation"));
+
+        mockMvc.perform(get("/v1/peak-time")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isInternalServerError())
+                .andExpect(jsonPath("$.errorCode").value("INTERNAL_SERVER_ERROR"))
+                .andExpect(jsonPath("$.errorMessage").value("An unexpected error occurred. Please try again later."));
     }
 }
