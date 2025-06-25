@@ -7,8 +7,6 @@ import lombok.AllArgsConstructor;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.eatclub.deals.entity.Deal;
 
 
@@ -16,9 +14,6 @@ import com.eatclub.deals.entity.Deal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DealResponseDto {
-
-    @Autowired
-    private DateTimeFormatter dateTimeFormatter;
 
     // Restaurant-related fields (flattened as per the image)
     private String restaurantObjectId;
