@@ -1,0 +1,163 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="Page-1" id="Xrynkhud4uRTR02h4PsV">
+    <mxGraphModel dx="1426" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-1" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="240" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-2" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-3" value="&lt;b&gt;Customer&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-4" value="&lt;b&gt;Payments Management&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="240" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-5" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="240" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-6" value="&lt;b&gt;Restaurant/ Venue&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="355" y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-7" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="680" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-8" value="&lt;b&gt;Channels&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-9" value="(Web)Online" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-10" value="In-app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="350" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-11" value="Restaurant/ Partner management tool" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="620" y="150" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-12" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="560" width="205" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-13" value="&lt;b&gt;Deal and Offer Domain&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="560" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-14" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-15" value="User Profile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="340" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-16" value="User Device" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-17" value="User Wallet/ EatClub Card" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-18" value="Restaurant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="365" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-21" value="Transactions&lt;div&gt;(Users)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-22" value="Payouts (Restaurants)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="680" y="340" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-23" value="Subscription management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="680" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-24" value="Loyalty?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="680" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-25" value="Deal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="365" y="610" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-26" value="Deal Rules" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="365" y="670" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-28" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;EatClub Conceptual Architecture&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-29" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="560" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-30" value="&lt;b&gt;Booking and Reservations?&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="662.5" y="560" width="165" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-31" value="Bookings?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="680" y="610" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-34" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="560" width="205" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-35" value="&lt;b&gt;AI, Analytics and BI(Reporting)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-36" value="User Activity Logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="77.5" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-37" value="Restaurant Performance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="77.5" y="680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-27" value="Deal Analytics/ AI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="740" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-38" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="790" width="205" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-39" value="&lt;b&gt;Marketing&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="790" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-40" value="Omnichannel marketing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="365" y="850" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-41" value="AD Tech Partners?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1000" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-42" value="Cuisine Mapping" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="365" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-43" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="637.5" y="790" width="205" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-44" value="&lt;b&gt;Employees&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="662.5" y="790" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-45" value="Product Teams" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="677.5" y="840" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-46" value="Partner Managers/ Field Force" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="677.5" y="900" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-47" value="Base Data Aggregation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-48" value="Promos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="365" y="900" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-49" value="Reviews/ User Feedback?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="365" y="950" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-50" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-52" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-57" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="600" y="50" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-58" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="27.5" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-60" value="Current State Entitites" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="25" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="15ZGqmYKo5y6leRUtKsG-61" value="Future State / Clarification needed" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="622.5" y="47.5" width="190" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
